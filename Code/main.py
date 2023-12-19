@@ -213,13 +213,13 @@ def page2(n):
             print("Solution found:")
             print_solution()
             GV.number_of_trials_back_track.set(GV.number_of_trials[0])
-            GV.solution_found_back_track.set('no solution found !')
-            GV.number_of_trials_success_back_track.set(0)
+            GV.solution_found_back_track.set('solution found !')
+            GV.number_of_trials_success_back_track.set(n)
             return True
         else:
             board = []
             print("No solution exists")
-            GV.solution_found_back_track.set('solution found !')
+            GV.solution_found_back_track.set('no solution found !')
 
             return True
 
